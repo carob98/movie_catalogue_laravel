@@ -1,1 +1,21 @@
 @import 'bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-red: #e50914;
+    --dark-red: #b20710;
+    --dark: #040519;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+    font-family: "Inter Tight", sans-serif;
+    color: white;
+    font-size: 14px;
+}

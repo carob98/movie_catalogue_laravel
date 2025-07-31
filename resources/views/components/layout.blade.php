@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>{{ env('APP_NAME') }}</title>
     @vite (['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
-
+    <header>
+        <x-nav></x-nav>
+    </header>
+    {{ $slot }}
+    <x-footer></x-footer>
 </body>
 
 </html>
