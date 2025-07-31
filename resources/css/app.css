@@ -4,7 +4,7 @@
 :root {
     --primary-red: #e50914;
     --dark-red: #b20710;
-    --dark: #040519;
+    --dark: #000000;
 }
 
 * {
@@ -18,4 +18,21 @@ body {
     font-family: "Inter Tight", sans-serif;
     color: white;
     font-size: 14px;
+}
+
+.rectangle-bg {
+    background: #751015;
+background: linear-gradient(0deg, rgba(117, 16, 21, 0.5) 20%, rgba(0, 0, 0, 0.43) 100%);
+}
+
+.rectangle-inverse {
+    background: #751015;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.43)  20%, rgba(117, 16, 21, 0.5) 100%);
+}
+
+.card-img {
+    width:250px;
+    height:400px;
+    object-fit: cover;
+    object-position: 50% 50%; 
 }
