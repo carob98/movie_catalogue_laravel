@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('release_year');
             $table->string('genre');
             $table->string('cover')->nullable();
-            $table->time('duration');
+            $table->string('duration');
             $table->timestamps();
         });
     }
