@@ -30,9 +30,49 @@ background: linear-gradient(0deg, rgba(117, 16, 21, 0.5) 20%, rgba(0, 0, 0, 0.43
 background: linear-gradient(0deg, rgba(0, 0, 0, 0.43)  20%, rgba(117, 16, 21, 0.5) 100%);
 }
 
+.full-bg {
+    background: #751015;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.43) 20%, rgba(117, 16, 21, 0.5) 50%, rgba(0, 0, 0, 0.43) 100%);
+}
+
 .card-img {
     width:250px;
     height:400px;
     object-fit: cover;
     object-position: 50% 50%; 
+}
+
+.btn1 {
+    border:none;
+    background-color: var(--primary-red);
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    max-height: fit-content;
+    -webkit-box-shadow: 5px 5px 11px 9px rgba(178,7,16,0.2), inset 5px 5px 25px 9px rgba(117,16,21,0.4); 
+    box-shadow: 5px 5px 11px 9px rgba(178,7,16,0.2), inset 5px 5px 25px 9px rgba(117,16,21,0.4);
+}
+
+.btn1:hover {
+    border:none;
+    background-color: var(--dark-red);
+    color: white;
+    scale:1.05;
+}
+
+.btn2 {
+    border:solid 2px var(--primary-red);
+    background-color: transparent;
+    color: var(--primary-red);
+    font-weight: 700;
+    border-radius: 8px;
+    max-height: fit-content;
+    -webkit-box-shadow: 5px 5px 11px 9px rgba(178,7,16,0.2), inset 5px 5px 25px 9px rgba(117,16,21,0.4); 
+    box-shadow: 5px 5px 11px 9px rgba(178,7,16,0.2), inset 5px 5px 25px 9px rgba(117,16,21,0.4);
+}
+
+.btn2:hover {
+    border:solid 2px var(--primary-red);
+    color: var(--primary-red);
+    scale:1.05;
 }

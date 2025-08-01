@@ -7,7 +7,8 @@
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span> <!-- Da fixare il colore dell'hambureger menu -->
             </button>
-            <div class="collapse navbar-collapse justify-content-end text-uppercase text-white" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse justify-content-end text-uppercase text-white fw-bold"
+                id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{{ route('pages.homepage') }}">Home</a>
