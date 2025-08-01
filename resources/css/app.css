@@ -43,18 +43,18 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.43)  20%, rgba(117, 16, 21, 0.
 }
 
 .btn1 {
-    border:none;
+    border:solid 2px var(--primary-red);
     background-color: var(--primary-red);
     color: white;
     font-weight: 500;
     border-radius: 8px;
-    max-height: fit-content;
+    height: fit-content;
     -webkit-box-shadow: 5px 5px 11px 9px rgba(178,7,16,0.2), inset 5px 5px 25px 9px rgba(117,16,21,0.4); 
     box-shadow: 5px 5px 11px 9px rgba(178,7,16,0.2), inset 5px 5px 25px 9px rgba(117,16,21,0.4);
 }
 
 .btn1:hover {
-    border:none;
+    border:solid 2px var(--dark-red);
     background-color: var(--dark-red);
     color: white;
     scale:1.05;
@@ -64,9 +64,9 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.43)  20%, rgba(117, 16, 21, 0.
     border:solid 2px var(--primary-red);
     background-color: transparent;
     color: var(--primary-red);
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 8px;
-    max-height: fit-content;
+    height: fit-content;
     -webkit-box-shadow: 5px 5px 11px 9px rgba(178,7,16,0.2), inset 5px 5px 25px 9px rgba(117,16,21,0.4); 
     box-shadow: 5px 5px 11px 9px rgba(178,7,16,0.2), inset 5px 5px 25px 9px rgba(117,16,21,0.4);
 }
