@@ -3,7 +3,7 @@
         <div class="info_section p-2 col-6 d-flex flex-column align-content-center justify-content-center gap-2">
             <div class="film_header d-flex flex-column ps-4 gap-2">
                 <h2 class="col-5">{{ $film->title }}</h2>
-                <h4>{{ $film->release_year }}, Regista</h4>
+                <h4>{{ $film->release_year }}, {{ $film->director }}</h4>
                 <div>
                     <span class="minutes">{{ $film->duration }}</span>
                     <p class="genre">{{ $film->genre }}</p>
@@ -14,11 +14,13 @@
                     {{ $film->description }}
                 </p>
             </div>
-            <div class="d-flex justify-content-start ps-4 mb-4">
-                <a class="btn btn2" href="#">
-                    Guarda il trailer
-                </a>
-            </div>
+            @if (!($film->trailer_url === null))
+                <div class="d-flex justify-content-start ps-4 mb-4">
+                    <a class="btn btn2" href="{{ $film->trailer_url }}" target="_blank">
+                        Guarda il trailer
+                    </a>
+                </div>
+            @endif
         </div>
         <img class="blur_bg w-50 object-fit-cover"
             src="{{ $film->cover ? Storage::url($film->cover) : '/images/default-poster.jpg' }}" />
