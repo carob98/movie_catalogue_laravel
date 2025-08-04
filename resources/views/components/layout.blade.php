@@ -13,7 +13,10 @@
     <header>
         <x-nav></x-nav>
     </header>
-    {{ $slot }}
+    <div class="container.fluid full-bg p-5">
+        {{ $slot }}
+    </div>
+
     <x-footer></x-footer>
 </body>
 

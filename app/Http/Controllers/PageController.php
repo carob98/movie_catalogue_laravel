@@ -9,7 +9,7 @@ class PageController extends Controller
 {
     public function homepage()
     {
-        $films = Film::latest()->take(6)->get();
+        $films = Film::latest()->take(8)->get();
 
         return view('pages.homepage', compact('films'));
     }

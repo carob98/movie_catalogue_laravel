@@ -53,6 +53,7 @@ class FilmController extends Controller
 
     public function update(Film $film, Request $request)
     {
+
         $cover = $film->cover;
         if ($request->hasFile('cover')) {
             $file_name = $request->file('cover')->getClientOriginalName();

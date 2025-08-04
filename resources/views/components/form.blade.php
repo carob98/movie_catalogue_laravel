@@ -6,8 +6,11 @@
 
     <x-errors-all></x-errors-all>
 
-    <form action="{{ route('films.store') }}" method="POST" enctype="multipart/form-data" class="m-5">
+    <form action="{{ $action }}" method="POST" enctype="multipart/form-data" class="m-5">
         @csrf
+        @if ($isUpdate)
+            @method('PUT')
+        @endif
         <div class="mb-3">
             <label for="title" class="form-label">Titolo del film</label>
             <input type="text" class="form-control @error('title') is-invalid @enderror" id="title"
