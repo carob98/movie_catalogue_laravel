@@ -8,6 +8,8 @@
             <x-slot name="release_year">{{ old('release_year') }}</x-slot>
             <x-slot name="genre">{{ old('genre') }}</x-slot>
             <x-slot name="duration">{{ old('duration') }}</x-slot>
+            <x-slot name="director">{{ old('director') }}</x-slot>
+            <x-slot name="trailer_url">{{ old('trailer_url') }}</x-slot>
         </x-form>
     </div>
 </x-layout>

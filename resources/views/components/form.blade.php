@@ -17,6 +17,11 @@
                 placeholder="Inserisci titolo" name="title" value="{{ $title }}">
         </div>
         <div class="mb-3">
+            <label for="director" class="form-label">Regia</label>
+            <input type="text" class="form-control @error('title') is-invalid @enderror" id="director"
+                placeholder="Inserisci regista" name="director" value="{{ $director }}">
+        </div>
+        <div class="mb-3">
             <label for="description" class="form-label">Trama</label>
             <input type="text" class="form-control @error('description') is-invalid @enderror" id="description"
                 placeholder="Inserisci trama" name="description" value="{{ $description }}">
@@ -35,6 +40,11 @@
             <label for="duration" class="form-label">Durata</label>
             <input type="text" class="form-control @error('duration') is-invalid @enderror" id="duration"
                 placeholder="Inserisci durata" name="duration" value="{{ $duration }}">
+        </div>
+        <div class="mb-3">
+            <label for="trailer_url" class="form-label">Link al Trailer</label>
+            <input type="text" class="form-control @error('title') is-invalid @enderror" id="trailer_url"
+                placeholder="Inserisci URL" name="trailer_url" value="{{ $trailer_url }}">
         </div>
         <div class="mb-3">
             @if ($isDetail)

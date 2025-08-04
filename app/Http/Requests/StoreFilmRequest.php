@@ -27,6 +27,8 @@ class StoreFilmRequest extends FormRequest
             'release_year' => ['required', 'integer'],
             'duration' => ['required', 'string'],
             'genre' => ['required', 'string'],
+            'director' => ['required', 'string'],
+            'trailer_url' => ['nullable', 'string'],
             'cover' => ['nullable', 'mimes:jpg,jpeg,bmp,png,webp'],
         ];
     }

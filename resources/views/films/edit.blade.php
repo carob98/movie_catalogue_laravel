@@ -9,6 +9,8 @@
             <x-slot name="release_year">{{ $film->release_year }}</x-slot>
             <x-slot name="genre">{{ $film->genre }}</x-slot>
             <x-slot name="duration">{{ $film->duration }}</x-slot>
+            <x-slot name="director">{{ $film->director }}</x-slot>
+            <x-slot name="trailer_url">{{ $film->trailer_url }}</x-slot>
         </x-form>
     </div>
 </x-layout>

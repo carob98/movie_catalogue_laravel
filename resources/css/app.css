@@ -91,8 +91,6 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.43)  20%, rgba(117, 16, 21, 0.
 .film_card {
     position: relative;
     display: block;
-    width: 80%;
-    height: 35%;
     overflow: hidden;
     border-radius: 10px;
     transition: all 0.4s;
@@ -159,6 +157,7 @@ background: linear-gradient(0deg, rgba(0, 0, 0, 0.43)  20%, rgba(117, 16, 21, 0.
     background-size: cover;
     object-position: center;
     border-radius: 11px;
+    scale: 1.2;
 }
 
 .shade {

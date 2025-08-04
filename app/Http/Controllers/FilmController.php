@@ -35,6 +35,8 @@ class FilmController extends Controller
             'release_year' => $request->release_year,
             'duration' => $request->duration,
             'genre' => $request->genre,
+            'director' => $request->director,
+            'trailer_url' => $request->trailer_url,
             'cover' => $path_image,
         ]);
 
@@ -51,7 +53,7 @@ class FilmController extends Controller
         return view('films.edit', compact('film'));
     }
 
-    public function update(Film $film, Request $request)
+    public function update(Film $film, StoreFilmRequest $request)
     {
 
         $cover = $film->cover;
@@ -59,15 +61,6 @@ class FilmController extends Controller
             $file_name = $request->file('cover')->getClientOriginalName();
             $cover = $request->file('cover')->storeAs('covers', $file_name, 'public');
         }
-
-        $film->update([
-            'title' => $request->title,
-            'description' => $request->description,
-            'release_year' => $request->release_year,
-            'duration' => $request->duration,
-            'genre' => $request->genre,
-            'cover' => $cover,
-        ]);
 
         return redirect()->route('films.index')->with('success', 'Il film é stato modificato!');
     }
