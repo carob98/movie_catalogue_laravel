@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="full-bg p-5 d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-center">Accedi</h2>
         <x-errors-all></x-errors-all>
         <form action="{{ route('login') }}" method="POST" class="m-5">

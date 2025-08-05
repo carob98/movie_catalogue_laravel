@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreFilmRequest;
+use App\Http\Requests\UpdateFilmRequest;
 use App\Models\Film;
 use Illuminate\Http\Request;
 
@@ -53,7 +54,7 @@ class FilmController extends Controller
         return view('films.edit', compact('film'));
     }
 
-    public function update(Film $film, StoreFilmRequest $request)
+    public function update(Film $film, UpdateFilmRequest $request)
     {
 
         $cover = $film->cover;
